@@ -1,0 +1,43 @@
+{% extends "layouts/main.html" %}
+
+{% block pageTitle %}
+  Confirmation page template – {{ serviceName }} – GOV.UK Prototype Kit
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      {{ govukPanel({
+        titleText: "Congratulations, space traveler! 🚀 ",
+        html: "Your reference number<br><strong>HDJ2123F</strong>"
+      }) }}
+
+     <h2 class="govuk-heading-m">
+     Your application for interplanetary exploration has been successfully submitted
+        </h2>
+      <h2 class="govuk-heading-m">
+        What happens next
+      </h2>
+
+      <p>
+        Prepare for an adventure beyond the stars as we process your request.
+
+
+      </p>
+
+      <p>
+        We will contact you either to confirm your registration, or to ask for more information. Safe travels and may the cosmos be with you!
+      </p>
+      <p>
+        <a href="#">
+          What did you think of this service?
+        </a> (takes 30 seconds)
+      </p>
+
+
+    </div>
+  </div>
+
+{% endblock %}
